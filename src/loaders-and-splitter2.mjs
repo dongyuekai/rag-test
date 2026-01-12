@@ -23,7 +23,7 @@ const embeddings = new OpenAIEmbeddings({
 });
 
 const cheerioLoader = new CheerioWebBaseLoader(
-  "https://juejin.cn/post/7233327509919547452",
+  "https://juejin.cn/post/7592500570168426531",
   {
     selector: '.main-area p'
   }
@@ -55,7 +55,7 @@ console.log("向量存储创建完成\n");
 const retriever = vectorStore.asRetriever({ k: 2 });
 
 const questions = [
-  "父亲的去世对作者的人生态度产生了怎样的根本性逆转？"
+  "AI时代，程序员的价值是什么？"
 ];
 
 // RAG 流程：对每个问题进行检索和回答
