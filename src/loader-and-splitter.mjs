@@ -1,5 +1,6 @@
 import 'dotenv/config'
 import 'cheerio'
+// 用CheerioWebBaseLoader加载网页内容，并使用RecursiveCharacterTextSplitter进行文本分块
 import { CheerioWebBaseLoader } from '@langchain/community/document_loaders/web/cheerio'
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
 
